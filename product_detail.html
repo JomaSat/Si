@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/detail.css">
+    <!-- <link rel="stylesheet" href="./style/style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="">
+                    <h1 class="header-logo"><span class="orange">Web</span>Buy<span class="orange">.kg</span></h1>
+                </div>
+                <div class="search">
+                    <input type="search" class="input" id="searchInput" placeholder="Поиск по каталогу...">
+                    <button class="btn btn__logo" id="searchButton">
+                        <i>
+                            <img src="./images/search.svg" alt="" class="i">
+                        </i>
+                    </button>
+                </div>
+                <div class="header__nav">
+                    <button class="btn-nav">
+                        <a href="#" class="lin"><i class='bx bx-home'></i></a>
+                    </button>
+                    <button class="btn-nav">
+                        <a href="#" class="lin"><i class='bx bx-user' ></i></a>
+                    </button>
+                    <button class="btn-nav">
+                        <a href="#" class="lin"><i class='bx bx-shopping-bag' ></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="product-details">
+                <h1 class="product-name"></h1>
+                <div class="product-info">
+                    <div class="">
+                        <div class="slider">
+                            <div class="slide">
+                                <img class="product-image" src="" alt="">
+                            </div>
+                        </div>
+                        <div class="container-btn">
+                            <button class="slider-prev"><</button> 
+                            <button class="slider-nex">></button>
+                        </div>
+                    </div>
+                        <div class="block-price">
+                            <div class="product-price"></div>
+                            <div class="bx">
+                                <button class="addBtn">Добавить в корзину</button>
+                                <button class="buyBtn">Купить</button>
+                            </div>                        
+                        </div>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h2 class="modal__subtitle">Заказать</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="input-content">
+                                        <input type="text" class="modal__int" id="firstNameInput" placeholder="Имя">
+                                        <input type="text" class="modal__int" id="phoneInput" placeholder="Телефон">
+                                        <input type="text" class="modal__int" id="addressInput" placeholder="Адрес">
+                                    </div>
+                                    <button class="submitBtn">Отправить</button>
+                                    <div class="massege"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <h3 class="subtitle__descripion">Общие характеристики</h3>
+                <div class="product-description"></div>
+
+                <!-- <button class="slider-"></button> -->
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-right">
+                    <h2>Информация</h2>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">О Сайте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Главное</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center">
+                    <img src="./images/logo-webBuy.jpg" alt="" class="webBuy-logo">
+                </div>
+                <div class="footer-left">
+                    <h2>Контакт</h2>
+                    <p>​ТЦ Мастер дом​Жукеева-Пудовкина, 146 ​1 этаж​</p>
+                    <ul>
+                        <li><a href="#">+996 (701) 511 487</a></li>
+                        <li><a href="#">+996 (703) 325 787</a></li>
+                        <li><a href="#">+996 (705) 420 172</a></li>
+                    </ul>
+                    <h6>с 10:00 до 19:00 (без выходных)</р>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+     <div class="container fx">
+        <div class="info-webbuy">
+            <p>Web-Buy © 2023 </p>
+        </div>
+        <div class="icon-web">
+            <a href="https://instagram.com/webbuy.kg?igshid=MmIzYWVlNDQ5Yg==" class="link-web"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="link-web"><i class='bx bxl-telegram' ></i></a>
+            <a href="#" class="link-web"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+     </div>
+    </div>
+    <!-- <script src="./script/script.js"></script> -->
+    <script src="./script/product_detail.js"></script>
+</body>
+</html>

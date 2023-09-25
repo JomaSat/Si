@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="/images/home.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>web_buy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="">
+                    <h1 class="header-logo"><span class="orange">Web</span>Buy<span class="orange">.kg</span></h1>
+                </div>
+                <div class="search">
+                    <input type="search" class="input" id="searchInput" placeholder="Поиск по каталогу...">
+                    <button class="btn btn__logo" id="searchButton">
+                        <i>
+                            <img src="./images/search.svg" alt="" class="i">
+                        </i>
+                    </button>
+                </div>
+
+                    <div class="header__nav">
+                        <button class="btn-nav">
+                            <a href="#" class="lin"><i class='bx bx-home'></i></a>
+                        </button>
+                        <button class="btn-nav" id="">
+                            <a href="#" class="lin"><i class='bx bx-user' ></i></a>
+                        </button>
+                        <button class="btn-nav btnBasket" id="openModalBtn">
+                            <a href="#" class="lin"><i class='bx bx-shopping-bag' ></i></a>
+                        </button>
+                    </div>
+
+                    <div class="modal-bascet" id="cartModal">
+                        <span class="close-basket" id="closeModalBasket">&times;</span>
+                        <div class="bascet-product">
+                            <div class="basket-header">
+                                <h2 class="basket-subtitle">Корзина</h2>
+                            </div>
+                            <div class="basket-body">
+                                <div class="empty-cart" id="emptyCartMessage">Корзина пуста</div>
+                                <ul class="cart-items" id="cartItemsList">
+                                    <!-- Здесь будут добавлены карточки товаров -->
+                                </ul>
+                                <div class="total" id="totalSection">
+                                    <p>Итого: $0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Содержимое модального окна (корзины) здесь -->
+                
+
+            </div>
+            <div class="header-phone">
+                <div class="phone-logo">        
+                    <div class="">
+                        <h1 class="header-logo"><span class="orange">Web</span>Buy<span class="orange">.kg</span></h1>
+                    </div>
+                    <div class="header__nav">
+                        <button class="btn-nav">
+                            <a href="#" class="lin"><i class='bx bx-home'></i></a>
+                        </button>
+                        <button class="btn-nav">
+                            <a href="#" class="lin"><i class='bx bx-user' ></i></a>
+                        </button>
+                        <button class="btn-nav">
+                            <a href="#" class="lin"><i class='bx bx-shopping-bag' ></i></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="search" class="phone-input" id="searchInput" placeholder="Поиск по каталогу...">
+                    <button class="btn btn__logo" id="searchButton">
+                        <i>
+                            <img src="./images/search.svg" alt="" class="i">
+                        </i>
+                    </button>
+                </div>
+            </div>
+    </header>
+    <main class="main">
+        <div class="">
+            <h1 class="new"><span class="orange">Акции</span> Новинки</h1>
+        </div>
+        <div class="container">
+                <div id="searchResults">
+                    <!-- Здесь будут отображаться результаты поиска -->
+                </div>   
+            <div class="product-container">
+            </div>
+            <div class="product-no"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-right">
+                    <h2>Информация</h2>
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">О Сайте</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Главное</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center">
+                    <img src="./images/logo-webBuy.jpg" alt="" class="webBuy-logo">
+                </div>
+                <div class="footer-left">
+                    <h2>Контакт</h2>
+                    <p>​ТЦ Мастер дом​Жукеева-Пудовкина, 146 ​1 этаж​</p>
+                    <ul>
+                        <li><a href="#">+996 (701) 511 487</a></li>
+                        <li><a href="#">+996 (703) 325 787</a></li>
+                        <li><a href="#">+996 (705) 420 172</a></li>
+                    </ul>
+                    <h6>с 10:00 до 19:00 (без выходных)</р>
+                </div>
+            </div>
+            <div class="row-phone">
+                <div class="lf-ri">
+                    <div class="footer-right">
+                        <h2>Информация</h2>
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">О Сайте</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Главное</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-left">
+                        <h2>Контакт</h2>
+                        <p>​ТЦ Мастер дом​Жукеева-Пудовкина, 146 ​1 этаж​</p>
+                        <ul>
+                            <li><a href="#">+996 (701) 511 487</a></li>
+                            <li><a href="#">+996 (703) 325 787</a></li>
+                            <li><a href="#">+996 (705) 420 172</a></li>
+                        </ul>
+                        <h6>с 10:00 до 19:00 (без выходных)</р>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <img src="./images/logo-webBuy.jpg" alt="" class="webBuy-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+     <div class="container fx">
+        <div class="info-webbuy">
+            <p>Web-Buy © 2023 </p>
+        </div>
+        <div class="icon-web">
+            <a href="https://instagram.com/webbuy.kg?igshid=MmIzYWVlNDQ5Yg==" target="_blank" class="link-web"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="link-web"><i class='bx bxl-telegram' ></i></a>
+            <a href="#" class="link-web"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+     </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
